@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-Deatil</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="containermain">
+      <h1 class="titlemain">Weather Api</h1>
+      <div class="container1">
+        <div class="long">
+          
+            <p>Lat: <span id="lat"></span></p>
+            <p>Long: <span id="long"></span></p>
+          
+        </div>
+
+        <div id="map">
+          
+        </div>
+      </div>
+      <div class="conatainr2">
+        <h1 class="title2">Weather Data</h1>
+        <br>
+        <br>
+        <div class="innerconatiner">
+          <div class="output">
+            <div id="Display">
+              <p>Location  : <span id="location"></span></p>
+              <br>
+              <span style="font-size: 2rem; margin-right: 20rem;">Lat       : <span id="latti"></span></span>
+              <span style="font-size: 2rem;">Long      : <span id="logit"></span></span>
+              <br>
+              <br>
+              <p>Time Zone : <span id="Time_Zone"></span></p>
+              <br>
+              <p>Wind speed: <span id="Wind_speed"></span></p>
+              <br>
+              <p>Pressure  : <span id="pressure"></span></p>
+              <br>
+              <p>Humidity  : <span id="Humidity"></span></p>
+              <br>
+              <p>Wind Direction:<span id="Wind_Direction"></span></p>
+              <br>
+              <p>Temperature: <span id="Temp"></span></p>
+              <br>
+              <p>Feels like : <span id="Feels_like"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ8MdF46cAfrufiQCdk1pDKCvTiojQ0m0&callback=initMap"
+    ></script>
+  </body>
+</html>
